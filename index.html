@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <!-- SEO & OpenGraph Meta Tags -->
+  <title>Alex Rivera — Freelance Website Designer & Developer | Modern High-Performance Websites</title>
+  <meta name="description" content="I design and build modern, responsive websites for businesses, startups, creators, and professionals — from concept and prototype to a complete live website." />
+  <meta name="keywords" content="freelance web designer, website developer, web design studio, portfolio, nextjs, react, ui ux design, e-commerce, ai websites, vercel" />
+  <meta name="author" content="Alex Rivera" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Websites That Turn Ideas Into Digital Experiences" />
+  <meta property="og:description" content="Bespoke website design and development for businesses, startups, and creative brands. View prototypes, case studies, and live projects." />
+  <meta property="og:image" content="assets/images/project-talentgro.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Alex Rivera — Freelance Website Designer & Developer" />
+  <meta name="twitter:description" content="Turn your ideas into modern, high-speed, responsive websites." />
+
+  <!-- Google Fonts: Plus Jakarta Sans, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Subtle Ambient Grain Overlay -->
+  <div class="ambient-grain" aria-hidden="true"></div>
+
+  <!-- =====================================================================
+       STICKY NAVIGATION BAR
+       ===================================================================== -->
+  <header class="navbar" id="main-navbar">
+    <div class="container navbar-inner">
+      <!-- Brand Logo -->
+      <a href="#home" class="nav-brand" aria-label="Home">
+        <div class="brand-symbol">R</div>
+        <div class="brand-text">
+          <span class="brand-name js-brand-title">RIVERA.STUDIO</span>
+          <span class="brand-role js-brand-role">Web Design &amp; Dev</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#live-showcase" class="nav-link">Live Sites</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Right Actions -->
+      <div class="nav-actions">
+        <div class="nav-status">
+          <span class="status-dot"></span>
+          <span id="navbar-status-badge">Accepting New Projects</span>
+        </div>
+        <a href="#contact" class="btn btn-primary btn-sm">Start a Project</a>
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+  <aside class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation">
+    <div>
+      <div class="nav-brand" style="margin-bottom: 30px;">
+        <div class="brand-symbol">R</div>
+        <div class="brand-text">
+          <span class="brand-name js-brand-title">RIVERA.STUDIO</span>
+          <span class="brand-role js-brand-role">Design &amp; Development</span>
+        </div>
+      </div>
+      <ul class="mobile-menu">
+        <li><a href="#home" class="mobile-link"><span>Home</span> <span>→</span></a></li>
+        <li><a href="#work" class="mobile-link"><span>Work &amp; Prototypes</span> <span>→</span></a></li>
+        <li><a href="#services" class="mobile-link"><span>Services</span> <span>→</span></a></li>
+        <li><a href="#process" class="mobile-link"><span>Process</span> <span>→</span></a></li>
+        <li><a href="#live-showcase" class="mobile-link"><span>Live Deployments</span> <span>→</span></a></li>
+        <li><a href="#about" class="mobile-link"><span>About Me</span> <span>→</span></a></li>
+        <li><a href="#faq" class="mobile-link"><span>FAQ</span> <span>→</span></a></li>
+        <li><a href="#contact" class="mobile-link"><span>Contact</span> <span>→</span></a></li>
+      </ul>
+    </div>
+    <div class="mobile-footer">
+      <a href="#contact" class="btn btn-primary btn-full">Start a Project →</a>
+      <p style="font-size: 12px; color: var(--text-muted); text-align: center;">Direct Developer Collaboration</p>
+    </div>
+  </aside>
+
+  <!-- =====================================================================
+       1. HERO SECTION
+       ===================================================================== -->
+  <section class="hero" id="home">
+    <div class="hero-mesh" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      
+      <!-- Hero Left: Headlines & CTAs -->
+      <div class="hero-content-col">
+        <div class="hero-badge-wrap">
+          <div class="eyebrow-pill">
+            <span class="pulsing-dot"></span>
+            <span class="js-availability">Available for Q4/2026 Projects</span>
+          </div>
+        </div>
+
+        <h1 class="hero-headline">
+          Websites That Turn Ideas Into <span class="headline-highlight">Digital Experiences.</span>
+        </h1>
+
+        <p class="hero-subtext">
+          I design and build modern, responsive websites for businesses, startups, creators and professionals — from concept and prototype to a complete live website.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary btn-lg">
+            <span>Start a Project</span>
+            <span aria-hidden="true">→</span>
+          </a>
+          <a href="#work" class="btn btn-secondary btn-lg">
+            <span>View My Work</span>
+            <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <!-- Live Websites Fast-Launcher Bar -->
+        <div class="hero-live-pills-bar">
+          <span class="live-pill-tag">✨ Live Deployments:</span>
+          <a href="https://abc-alpha-two.vercel.app/" target="_blank" rel="noopener noreferrer" class="hero-live-pill" title="Open DukanBook Live on Vercel">
+            <span class="pulse-beacon"></span>
+            <span class="pill-name">DukanBook</span>
+            <span class="pill-host">Vercel</span>
+            <span class="pill-arr">↗</span>
+          </a>
+          <a href="https://super-cranachan-91cbef.netlify.app/" target="_blank" rel="noopener noreferrer" class="hero-live-pill" title="Open Maison Noir Live on Netlify">
+            <span class="pulse-beacon"></span>
+            <span class="pill-name">Maison Noir</span>
+            <span class="pill-host">Netlify</span>
+            <span class="pill-arr">↗</span>
+          </a>
+          <a href="https://papaya-cranachan-dbf27d.netlify.app/" target="_blank" rel="noopener noreferrer" class="hero-live-pill" title="Open Wandershot Live on Netlify">
+            <span class="pulse-beacon"></span>
+            <span class="pill-name">Wandershot</span>
+            <span class="pill-host">Netlify</span>
+            <span class="pill-arr">↗</span>
+          </a>
+        </div>
+
+        <!-- Hero Stats Strip -->
+        <div class="hero-metrics-strip">
+          <div class="metric-item">
+            <span class="metric-value" id="metric-satisfaction-val">100%</span>
+            <span class="metric-label">Client Satisfaction</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-value" id="metric-projects-val">45+</span>
+            <span class="metric-label">Delivered Projects</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-value" id="metric-speed-val">99.4%</span>
+            <span class="metric-label">Avg. Speed Score</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-value" id="metric-exp-val">5+</span>
+            <span class="metric-label">Years Crafting</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Right: Interactive Multi-Project Device Showcase -->
+      <div class="hero-mockup-wrapper" id="hero-mockup-wrapper">
+        <!-- Floating Micro-Card 1 -->
+        <div class="floating-card floating-card-1">
+          <div class="float-icon">⚡</div>
+          <div>
+            <div class="float-text-title">Sub-Second Load Time</div>
+            <div class="float-text-sub">99+ Google Lighthouse Score</div>
+          </div>
+        </div>
+
+        <!-- Floating Micro-Card 2 -->
+        <div class="floating-card floating-card-2">
+          <div class="float-icon">🎨</div>
+          <div>
+            <div class="float-text-title">Custom Design System</div>
+            <div class="float-text-sub">Figma Prototype to Live Web</div>
+          </div>
+        </div>
+
+        <!-- Browser Window Mockup -->
+        <div class="browser-window" id="hero-browser-window">
+          <!-- Window Header with Dots & Project Switcher Tabs -->
+          <div class="browser-header">
+            <div class="browser-dots">
+              <span class="browser-dot dot-red"></span>
+              <span class="browser-dot dot-yellow"></span>
+              <span class="browser-dot dot-green"></span>
+            </div>
+            <div class="browser-tabs" id="hero-browser-tabs">
+              <!-- Dynamically populated project switcher tabs -->
+            </div>
+          </div>
+
+          <!-- Browser Screen Body -->
+          <div class="browser-body">
+            <img id="hero-preview-img" src="assets/images/project-dukanbook.svg" alt="Project Preview Mockup" class="browser-preview-img" />
+            
+            <!-- Bottom Hover Action Bar -->
+            <div class="browser-overlay-bar">
+              <div>
+                <div class="preview-info-title" id="hero-preview-title">DukanBook – Smart Business Tracker</div>
+                <div class="preview-info-badge" id="hero-preview-badge">Live on Vercel • Bilingual ERP</div>
+              </div>
+              <button class="preview-overlay-btn" id="hero-preview-action-btn">
+                <span>View Case Study</span> <span>↗</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Infinite Ambient Marquee Ticker -->
+  <div class="marquee-wrapper" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-item"><span class="accent">DUKANBOOK</span> ON VERCEL <span class="dot">●</span></div>
+      <div class="marquee-item"><span class="accent">MAISON NOIR</span> ELEVATED FASHION <span class="dot">●</span></div>
+      <div class="marquee-item"><span class="accent">WANDERSHOT</span> PHOTOGRAPHY <span class="dot">●</span></div>
+      <div class="marquee-item">100% LIGHTHOUSE PERFORMANCE <span class="dot">●</span></div>
+      <div class="marquee-item">BESPOKE UI/UX DESIGN <span class="dot">●</span></div>
+      <div class="marquee-item">SUB-SECOND SPEED <span class="dot">●</span></div>
+      <div class="marquee-item">ZERO TEMPLATES <span class="dot">●</span></div>
+      <div class="marquee-item">DIRECT PARTNERSHIP <span class="dot">●</span></div>
+      <!-- Duplicate for seamless loop -->
+      <div class="marquee-item"><span class="accent">DUKANBOOK</span> ON VERCEL <span class="dot">●</span></div>
+      <div class="marquee-item"><span class="accent">MAISON NOIR</span> ELEVATED FASHION <span class="dot">●</span></div>
+      <div class="marquee-item"><span class="accent">WANDERSHOT</span> PHOTOGRAPHY <span class="dot">●</span></div>
+      <div class="marquee-item">100% LIGHTHOUSE PERFORMANCE <span class="dot">●</span></div>
+      <div class="marquee-item">BESPOKE UI/UX DESIGN <span class="dot">●</span></div>
+      <div class="marquee-item">SUB-SECOND SPEED <span class="dot">●</span></div>
+      <div class="marquee-item">ZERO TEMPLATES <span class="dot">●</span></div>
+      <div class="marquee-item">DIRECT PARTNERSHIP <span class="dot">●</span></div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       2. ABOUT / INTRODUCTION SECTION
+       ===================================================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow-pill">
+          <span>About My Practice</span>
+        </div>
+        <h2 class="section-title">Turning Ideas Into <span class="text-gradient">Websites.</span></h2>
+        <p class="section-subtitle">
+          I work with clients to understand their goals, create the visual direction, develop the website, and deliver a polished final product that commands credibility.
+        </p>
+      </div>
+
+      <!-- About Story & Feature Pillars -->
+      <div class="about-grid">
+        <div class="about-story">
+          <p>
+            Whether you are launching a new startup, scaling an established business, or creating a distinctive personal brand, your website is the definitive digital touchpoint where impressions turn into clients.
+          </p>
+          <p>
+            I combine modern aesthetics, psychological conversion principles, and clean production-ready code. You get direct access to a dedicated designer and developer without agency markups or diluted communication.
+          </p>
+          <div style="margin-top: 30px;">
+            <a href="#work" class="btn btn-secondary">Explore Previous Works →</a>
+          </div>
+        </div>
+
+        <!-- 4 Core Pillars Grid -->
+        <div class="pillars-grid" id="about-pillars-grid">
+          <!-- Dynamically populated from siteConfig.about.pillars -->
+        </div>
+      </div>
+
+      <!-- Interactive Workflow Banner: Idea → Strategy → Design → Development → Launch -->
+      <div class="workflow-strip">
+        <div class="workflow-label">
+          <span class="workflow-label-title">Guaranteed Workflow</span>
+          <span class="workflow-label-sub">How we bring your website to life</span>
+        </div>
+        <div class="workflow-steps-row">
+          <div class="wf-step-node">💡 Idea</div>
+          <span class="wf-step-arrow">→</span>
+          <div class="wf-step-node">🎯 Strategy</div>
+          <span class="wf-step-arrow">→</span>
+          <div class="wf-step-node">🎨 Design</div>
+          <span class="wf-step-arrow">→</span>
+          <div class="wf-step-node">💻 Development</div>
+          <span class="wf-step-arrow">→</span>
+          <div class="wf-step-node">🚀 Launch</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       3. SERVICES SECTION (8 Services)
+       ===================================================================== -->
+  <section class="section" id="services" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow-pill">
+          <span>What I Offer</span>
+        </div>
+        <h2 class="section-title">Specialized <span class="text-gradient">Web Services.</span></h2>
+        <p class="section-subtitle">
+          From concept sketches to high-traffic live deployment, I provide end-to-end digital capabilities designed to help your brand stand out and convert.
+        </p>
+      </div>
+
+      <!-- Services Grid (8 cards) -->
+      <div class="services-grid" id="services-grid">
+        <!-- Dynamically rendered via js/app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       4. FEATURED PROJECTS / MY WORK
+       ===================================================================== -->
+  <section class="section" id="work">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow-pill">
+          <span>Selected Works &amp; Prototypes</span>
+        </div>
+        <h2 class="section-title">Built With Purpose. <span class="text-gradient">Proven In Production.</span></h2>
+        <p class="section-subtitle">
+          Explore a curated selection of live production websites, bespoke prototypes, and case studies created for businesses, creators, and technology startups.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="portfolio-filters" id="portfolio-filters">
+        <!-- Dynamically rendered: All, Business, Portfolio, Landing Page, E-commerce, AI, Creative, Other -->
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="projects-grid" id="projects-grid">
+        <!-- Dynamically rendered via js/app.js -->
+      </div>
+
+      <!-- Expandable Portfolio Callout -->
+      <div style="margin-top: 60px; text-align: center; padding: 30px; border-radius: var(--radius-lg); background: rgba(255,255,255,0.02); border: 1px dashed var(--border-medium);">
+        <p style="color: var(--text-secondary); margin-bottom: 12px;">
+          Have a specific concept or industry in mind? I build bespoke prototypes tailored to your exact industry.
+        </p>
+        <a href="#contact" class="btn btn-primary btn-sm">Request a Custom Prototype →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       5. MY PROCESS (5-Step Methodology)
+       ===================================================================== -->
+  <section class="section" id="process" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow-pill">
+          <span>Structured Methodology</span>
+        </div>
+        <h2 class="section-title">How We Build <span class="text-gradient">Together.</span></h2>
+        <p class="section-subtitle">
+          A transparent, frictionless 5-step process ensuring total alignment, on-time delivery, and no surprises.
+        </p>
+      </div>
+
+      <!-- 5-Step Connected Timeline -->
+      <div class="process-timeline" id="process-timeline">
+        <!-- Dynamically populated from siteConfig.process -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       6. WHY WORK WITH ME (8 Value Cards)
+       ===================================================================== -->
+  <section class="section" id="why-me">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow-pill">
+          <span>Why Work With Me</span>
+        </div>
+        <h2 class="section-title">Crafting Quality <span class="text-gradient">Without Compromise.</span></h2>
+        <p class="section-subtitle">
+          Direct collaboration, pixel-level precision, and a relentless focus on client business objectives.
+        </p>
+      </div>
+
+      <!-- 8 Value Bento Cards -->
+      <div class="why-grid" id="why-grid">
+        <!-- Dynamically populated from siteConfig.whyMe -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       7. TECHNOLOGIES & TOOLS
+       ===================================================================== -->
+  <section class="section" id="technologies" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow-pill">
+          <span>Modern Tech Stack</span>
+        </div>
+        <h2 class="section-title">Tools &amp; Frameworks <span class="text-gradient">I Leverage.</span></h2>
+        <p class="section-subtitle">
+          Built with modern industry standards for high performance, maximum security, and effortless maintenance.
+        </p>
+      </div>
+
+      <!-- Tech Stack Grid -->
+      <div class="tech-grid" id="tech-grid">
+        <!-- Dynamically populated from siteConfig.technologies -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       8. TESTIMONIALS
+       ===================================================================== -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow-pill">
+          <span>Client Feedback</span>
+        </div>
+        <h2 class="section-title">Trusted By <span class="text-gradient">Founders &amp; Teams.</span></h2>
+        <p class="section-subtitle">
+          Realistic feedback from business owners and founders who transformed their digital presence.
+        </p>
+      </div>
+
+      <!-- Testimonials Grid -->
+      <div class="testimonials-grid" id="testimonials-grid">
+        <!-- Dynamically populated from siteConfig.testimonials -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       9. LIVE DEPLOYMENTS SHOWCASE (Shared Production Sites)
+       ===================================================================== -->
+  <section class="section" id="live-showcase" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow-pill">
+          <span class="pulsing-dot"></span>
+          <span>Verified Production Deployments</span>
+        </div>
+        <h2 class="section-title">Tested in Production. <span class="text-gradient">Live in the Wild.</span></h2>
+        <p class="section-subtitle">
+          Real client web applications and boutique stores deployed on ultra-fast edge infrastructure (Vercel &amp; Netlify). Click to test live or launch the interactive device simulator.
+        </p>
+      </div>
+
+      <!-- Live Deployments Grid -->
+      <div class="live-showcase-grid" id="live-showcase-grid">
+        <!-- Dynamically populated from siteConfig.liveDeployments via js/app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       10. FREQUENTLY ASKED QUESTIONS (FAQ)
+       ===================================================================== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow-pill">
+          <span>Got Questions?</span>
+        </div>
+        <h2 class="section-title">Frequently Asked <span class="text-gradient">Questions.</span></h2>
+        <p class="section-subtitle">
+          Everything you need to know about timelines, process, revisions, and working together.
+        </p>
+      </div>
+
+      <!-- FAQ Accordion -->
+      <div class="faq-container" id="faq-container">
+        <!-- Dynamically populated from siteConfig.faqs -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       11. CONTACT / START A PROJECT
+       ===================================================================== -->
+  <section class="section" id="contact" style="padding-bottom: 130px;">
+    <div class="container">
+      <div class="contact-card-wrapper">
+        <div class="contact-grid">
+          
+          <!-- Contact Left: Headline & Channels -->
+          <div class="contact-info-col">
+            <div class="eyebrow-pill">
+              <span class="pulsing-dot"></span>
+              <span>Available for Immediate Kickoff</span>
+            </div>
+
+            <h2>Have an Idea? <span class="text-gradient">Let's Build It.</span></h2>
+
+            <p>
+              Tell me what you have in mind and let's turn your idea into a professional website that attracts clients and drives real growth.
+            </p>
+
+            <div class="contact-channels-list">
+              <a href="mailto:hello@riverastudio.design" class="contact-channel-item js-contact-email-link">
+                <div class="channel-icon">✉️</div>
+                <div>
+                  <div class="channel-label">Email Me Directly</div>
+                  <div class="channel-val js-contact-email">hello@riverastudio.design</div>
+                </div>
+              </a>
+
+              <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" class="contact-channel-item js-contact-whatsapp-link">
+                <div class="channel-icon">💬</div>
+                <div>
+                  <div class="channel-label">Direct WhatsApp</div>
+                  <div class="channel-val js-contact-whatsapp">+1 (555) 234-5678</div>
+                </div>
+              </a>
+
+              <div class="contact-channel-item">
+                <div class="channel-icon">⏱️</div>
+                <div>
+                  <div class="channel-label">Rapid Response Guarantee</div>
+                  <div class="channel-val" style="color: var(--accent-emerald);">Replies within 2 Hours</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links Row -->
+            <div style="margin-top: 10px;">
+              <span style="font-size: 12px; font-family: var(--font-mono); color: var(--text-muted); text-transform: uppercase;">Connect on Networks</span>
+              <div class="footer-social-icons">
+                <a href="#" id="social-linkedin" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn">in</a>
+                <a href="#" id="social-github" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub">gh</a>
+                <a href="#" id="social-instagram" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Instagram">ig</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Right: Comprehensive Inquiry Form -->
+          <div class="contact-form-col">
+            <form class="project-form" id="project-inquiry-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="form-name">Your Name <span>*</span></label>
+                  <input type="text" id="form-name" class="form-input" placeholder="Sarah Jenkins" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="form-email">Email Address <span>*</span></label>
+                  <input type="email" id="form-email" class="form-input" placeholder="sarah@company.com" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="form-phone">Phone / WhatsApp</label>
+                  <input type="tel" id="form-phone" class="form-input" placeholder="+1 (555) 000-0000" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="form-brand">Business / Brand Name</label>
+                  <input type="text" id="form-brand" class="form-input" placeholder="Acme Studios" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="form-website-type">Website Type</label>
+                  <select id="form-website-type" class="form-select">
+                    <option value="Business Website">Business Website</option>
+                    <option value="E-commerce Store">E-commerce Store</option>
+                    <option value="Portfolio Website">Portfolio Website</option>
+                    <option value="High-Converting Landing Page">High-Converting Landing Page</option>
+                    <option value="AI-Powered Website / Web App">AI-Powered Website / Web App</option>
+                    <option value="Website Redesign">Website Redesign</option>
+                    <option value="Other Bespoke Project">Other Bespoke Project</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="form-reference">Reference / Existing Website</label>
+                  <input type="url" id="form-reference" class="form-input" placeholder="https://example.com" />
+                </div>
+              </div>
+
+              <!-- Budget Range Pills -->
+              <div class="form-group">
+                <label class="form-label">Estimated Budget Range</label>
+                <div class="budget-pills-row">
+                  <button type="button" class="budget-pill" data-budget="$500 – $1,500">$500 – $1,500</button>
+                  <button type="button" class="budget-pill selected" data-budget="$1,500 – $3,000">$1,500 – $3,000</button>
+                  <button type="button" class="budget-pill" data-budget="$3,000 – $5,000">$3,000 – $5,000</button>
+                  <button type="button" class="budget-pill" data-budget="$5,000+">$5,000+</button>
+                </div>
+              </div>
+
+              <!-- Required Features Multi-Select Tags -->
+              <div class="form-group">
+                <label class="form-label">Required Features (Select All That Apply)</label>
+                <div class="features-tags-row">
+                  <span class="feature-tag-check active" data-feature="Mobile-First Responsive">Mobile-First Responsive</span>
+                  <span class="feature-tag-check active" data-feature="Clean On-Page SEO">Clean On-Page SEO</span>
+                  <span class="feature-tag-check" data-feature="Custom CMS Admin">Custom CMS Admin</span>
+                  <span class="feature-tag-check" data-feature="Payments / E-commerce">Payments / E-commerce</span>
+                  <span class="feature-tag-check" data-feature="AI Chatbot Integration">AI Chatbot Integration</span>
+                  <span class="feature-tag-check" data-feature="Custom Animations">Custom Animations</span>
+                  <span class="feature-tag-check" data-feature="Fast Turnaround">Fast Turnaround</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-description">Project Description &amp; Goals</label>
+                <textarea id="form-description" class="form-textarea" placeholder="Describe what you want your website to achieve, key pages needed, or any specific ideas you have in mind..."></textarea>
+              </div>
+
+              <!-- Submit Buttons -->
+              <div class="form-actions-row">
+                <button type="submit" class="btn btn-primary btn-lg">
+                  <span>Send Project Inquiry</span>
+                  <span aria-hidden="true">→</span>
+                </button>
+                <button type="button" class="btn-whatsapp-chat" id="btn-send-whatsapp">
+                  <span>💬 Chat Directly on WhatsApp</span>
+                </button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       FOOTER
+       ===================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="nav-brand">
+            <div class="brand-symbol">R</div>
+            <div class="brand-text">
+              <span class="brand-name js-brand-title">RIVERA.STUDIO</span>
+              <span class="brand-role js-brand-role">Design &amp; Development</span>
+            </div>
+          </div>
+          <p>
+            Designing and engineering modern, fast, responsive websites for ambitious businesses and visionary creators worldwide.
+          </p>
+          <div class="footer-social-icons">
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-icon-btn" aria-label="GitHub">gh</a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram">ig</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#work">Selected Works</a></li>
+            <li><a href="#live-showcase">Live Deployments</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#process">5-Step Process</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Key Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Website Design</a></li>
+            <li><a href="#services">Website Development</a></li>
+            <li><a href="#services">E-commerce Stores</a></li>
+            <li><a href="#services">Landing Pages</a></li>
+            <li><a href="#services">AI-Powered Websites</a></li>
+            <li><a href="#services">Website Redesigns</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Start a Project</h4>
+          <p style="font-size: 14px; margin-bottom: 16px;">
+            Ready to turn your website idea into a reality? Let's talk today.
+          </p>
+          <p style="font-size: 13px; font-family: var(--font-mono); color: var(--accent-sky); margin-bottom: 8px;">
+            ✉️ <a href="mailto:hello@riverastudio.design" class="js-contact-email">hello@riverastudio.design</a>
+          </p>
+          <p style="font-size: 13px; font-family: var(--font-mono); color: var(--accent-emerald);">
+            💬 <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" class="js-contact-whatsapp">+1 (555) 234-5678</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> <span class="js-brand-title">RIVERA.STUDIO</span>. All rights reserved.
+        </div>
+        <div class="footer-creator">
+          Designed &amp; Built by <span class="js-brand-name">Alex Rivera</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =====================================================================
+       CASE STUDY DETAIL MODAL
+       ===================================================================== -->
+  <div class="modal-backdrop" id="case-study-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="cs-modal-title">
+    <div class="case-study-modal">
+      <div class="modal-header">
+        <div class="modal-header-info">
+          <span class="modal-category" id="cs-modal-category">Project Case Study</span>
+          <h3 class="modal-title" id="cs-modal-title">Project Title</h3>
+        </div>
+        <button class="modal-close-btn" onclick="closeCaseStudyModal()" aria-label="Close modal">✕</button>
+      </div>
+
+      <div class="modal-scroll-body">
+        <!-- Hero Image -->
+        <div class="modal-preview-box">
+          <img id="cs-modal-img" src="" alt="Case Study Visual Preview" />
+        </div>
+
+        <!-- Metrics Strip -->
+        <div class="modal-stats-bar" id="cs-modal-stats"></div>
+
+        <!-- Details Grid -->
+        <div class="cs-detail-grid">
+          <div>
+            <div class="cs-block">
+              <div class="cs-block-title">Client &amp; Scope</div>
+              <div class="cs-block-text" id="cs-modal-client"></div>
+            </div>
+
+            <div class="cs-block">
+              <div class="cs-block-title">The Objective</div>
+              <div class="cs-block-text" id="cs-modal-objective"></div>
+            </div>
+
+            <div class="cs-block">
+              <div class="cs-block-title">The Problem</div>
+              <div class="cs-block-text" id="cs-modal-problem"></div>
+            </div>
+
+            <div class="cs-block">
+              <div class="cs-block-title">The Solution</div>
+              <div class="cs-block-text" id="cs-modal-solution"></div>
+            </div>
+
+            <div class="cs-block">
+              <div class="cs-block-title">Design Approach &amp; UX</div>
+              <div class="cs-block-text" id="cs-modal-approach"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="cs-block">
+              <div class="cs-block-title">Technologies &amp; Tools</div>
+              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px;" id="cs-modal-tech"></div>
+            </div>
+
+            <div class="cs-block" style="margin-top: 24px;">
+              <div class="cs-block-title">Key Features Delivered</div>
+              <ul class="cs-features-list" id="cs-modal-features"></ul>
+            </div>
+
+            <div class="cs-block" style="margin-top: 24px;">
+              <div class="cs-block-title">Business Impact &amp; Results</div>
+              <div class="cs-block-text" id="cs-modal-results"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <div class="modal-nav-links">
+          <button class="btn btn-secondary btn-sm" id="cs-modal-prev-btn">← Previous Project</button>
+          <button class="btn btn-secondary btn-sm" id="cs-modal-next-btn">Next Project →</button>
+        </div>
+        <div style="display: flex; gap: 12px; align-items: center;">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" id="cs-modal-live-btn">
+            Visit Live Website ↗
+          </a>
+          <button class="btn btn-primary btn-sm" id="cs-modal-inquire-btn">
+            Start a Project Like This →
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       LIVE PROTOTYPE SIMULATOR MODAL (Interactive Device Frame)
+       ===================================================================== -->
+  <div class="modal-backdrop" id="simulator-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="simulator-title">
+    <div class="simulator-modal">
+      <div class="simulator-toolbar">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <button class="modal-close-btn" onclick="closePrototypeSimulator()" aria-label="Close simulator">✕</button>
+          <div>
+            <div id="simulator-title" style="font-weight: 700; color: #ffffff; font-size: 15px;">Live Interactive Preview</div>
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--accent-sky);">Simulated Viewport Mode</div>
+          </div>
+        </div>
+
+        <div class="device-switchers">
+          <button class="device-btn active" data-device="desktop" onclick="setSimulatorDevice('desktop')">💻 Desktop</button>
+          <button class="device-btn" data-device="tablet" onclick="setSimulatorDevice('tablet')">📱 Tablet</button>
+          <button class="device-btn" data-device="mobile" onclick="setSimulatorDevice('mobile')">📱 Mobile</button>
+        </div>
+
+        <div>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" id="simulator-external-link">
+            Open in New Tab ↗
+          </a>
+        </div>
+      </div>
+
+      <div class="simulator-frame-wrapper">
+        <iframe id="simulated-iframe" class="simulated-iframe desktop" src="about:blank" title="Website Prototype Simulator"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/animations.js"></script>
+
+</body>
+</html>
